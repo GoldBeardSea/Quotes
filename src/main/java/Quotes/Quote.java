@@ -6,6 +6,13 @@ public class Quote {
     private String likes;
     private String text;
 
+    public Quote(String[] tags, String author, String likes, String text) {
+        this.tags = tags;
+        this.author = author;
+        this.likes = likes;
+        this.text = text;
+    }
+
     public String[] getTags() {
         return tags;
     }

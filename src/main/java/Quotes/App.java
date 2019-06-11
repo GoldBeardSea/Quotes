@@ -15,14 +15,18 @@ public class App {
         System.out.println(new App().getGreeting());
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Do you want to a random quote? (1 Yes, 2 No)");
+        System.out.println("Do you want to a random quote? (1 Yes, 2 No, 3 Ron Swanson Quote)");
         int decision = scanner.nextInt();
         System.out.println("What is your local file path to assets?");
         String filePath = scanner.next();
         if (decision == 1) {
             System.out.println(GSONQuoteGrabber.quoteGetter(filePath));
-        } else {
+        }
+        if (decision == 2){
             System.out.println("Oh ok that was allowed I guess.");
+        }
+        if (decision == 3){
+            System.out.println(APIQuoteGrabber.getRonSwanson(filePath));
         }
     }
 }
