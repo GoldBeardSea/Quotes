@@ -17,3 +17,4 @@ App is our command line interface class.
 GSONQuoteGrabber if the internet is unavailable or if user specifies quotes will grab using this class.
 
 Quote is the class that constructs quote objects.
+
